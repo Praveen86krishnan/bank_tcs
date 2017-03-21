@@ -5,6 +5,19 @@ How to Use:
 1. Run & Refresh your models using create_model.py file, if needed.
 2. Run Strt.py file to see your desired output.
 
+
+How it works
+1.Initialize a point (currently set to sydney coordinates)
+2. Randomly find a value by which the character moves (new lat & lon)
+3. Find new time based on km/hr the char travels
+4. Find the nearest city as per the new coordinates
+5. Find the elevation using the image & training dataset
+6. Find Temperature as per lat, lon, elev & dates
+7. Find Pressure from ele
+8. Find weather condition based on lat,lon, ele, month & temp
+9. Get DewPoint from temp, which is then used to get Relative Humidity
+
+
 Note:
 Models are tested and gave good performance on the current dataset.
 Test results & Codes not in production code.
